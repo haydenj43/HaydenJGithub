@@ -1,3 +1,26 @@
-h1 {
+
+html {
+    box-sizing: border-box;
+
+    
+} 
+a {
+    text-decoration: none;
+    color: #dddddd;
+  }
+#navbar {
+display: flex;
+justify-content: flex-end;
+  width: 100%;
+background-color: cornflowerblue;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+    list-style-type: none;
+}
+
+  h1  {
     color: blue;
 }
