@@ -1,26 +1,112 @@
+:root 
 
 html {
-    box-sizing: border-box;
-
+    
+scroll-behavior: smooth;
     
 } 
+
+#navbar {
+display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+left:0;
+  width: 100%;
+background-color: cornflowerblue;
+}
 a {
     text-decoration: none;
     color: #dddddd;
   }
-#navbar {
-display: flex;
-justify-content: flex-end;
-  width: 100%;
-background-color: cornflowerblue;
-}
-
 .nav-list {
     display: flex;
-    margin-right: 2rem;
+    margin-right: 1rem;
     list-style-type: none;
+    
 }
 
+.nav-list a {padding: 1rem;
+
+}
+
+.nav-list a:hover {
+    background-color:#94b8ff;
+    
+}
+.header {
+    justify-content: center;
+    color: cornflowerblue;
+align-items: center;
+text-align: center;
+
+}
+h2{
+    font-size: 15mm;
+    font-family: cursive;
+}
+#projects {
+    background-color: lightcoral
+}
+.projects-grid {
+    background-color: lightcoral;
+    border-top: lightcoral;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+height: 100vh;
+   }
+   .project-tile{
+       margin:1;
+   }
+#welcome-section {
+    display: flex;
+    background-color: khaki;
+height: 100vh;
+    border-radius: 0%;
+    align-items: center;
+    justify-content: center;
+}
+figcaption {
+    text-align: center;
+    font-size: x-large;
+    color: cornflowerblue;
+}
+
+  
+  .projects-grid a:hover {
+    background-color: rgba(236, 113, 113, 0.822);
+  }
   h1  {
-    color: blue;
+    color: cornflowerblue;
+    font-family: cursive;
+    font-size: 15mm;
+    font: bolder;
+}
+@media  {#contact > h2 {
+    font-size: 6rem;
+}
+    
+}
+#contact {
+    display: flex;
+    height: 40vh;
+    align-items: center;
+    text-align: center;
+    background-color: khaki;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#profile-link {
+    text-align: center;
+    justify-content: center;
+    padding: 2rem;
+    align-items: center;
+}
+body {
+    margin: 0;
+    background-color: khaki;
 }
