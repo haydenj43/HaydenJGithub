@@ -84,11 +84,10 @@ figcaption {
     font-size: 15mm;
     font: bolder;
 }
-@media  {#contact > h2 {
-    font-size: 6rem;
-}
+
+
     
-}
+
 #contact {
     display: flex;
     height: 40vh;
