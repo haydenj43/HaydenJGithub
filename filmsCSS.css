@@ -1,0 +1,78 @@
+main {
+    background-color: lightcoral;
+    border-top: lightcoral;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+height: 300vh;
+min-height: 100%;
+   }
+img {
+    
+
+}
+
+.filmList {
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: none;
+    
+}
+.filmList a:hover {
+    background-color: rgba(236, 113, 113, 0.822);
+    size: 1000rem;
+    
+  }
+  h2 {
+    
+    color: cornflowerblue;
+font-family: cursive;
+width: 100%;
+font-size: 15mm;
+margin: 20rem;
+text-align: center;
+
+}
+#welcome-section {
+    background-color: khaki;
+    height: 700px;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+text-align: center;
+width: 100%
+}
+.nav-list {
+    display: flex;
+    margin-right: 1rem;
+    list-style-type: none;
+    
+}
+
+.nav-list a {padding: 1rem;
+
+}
+
+.nav-list a:hover {
+    background-color:#94b8ff;
+    
+}
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left:0;
+      width: 100%;
+    background-color: cornflowerblue;
+    }
+    a {
+        text-decoration: none;
+        color: #dddddd;
+      }
+      figcaption{
+          text-align: center;
+          font-size: 40px;
+          background-color: khaki;
+      }
