@@ -1,0 +1,22 @@
+ * {
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ #main {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ figure img {
+     height: 250px;
+ }
+ 
+ figure {
+     margin: 10px;
+ }
+ 
+ figcaption {
+     text-align: center;
+ }
