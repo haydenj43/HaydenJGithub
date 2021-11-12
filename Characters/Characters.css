@@ -1,33 +1,44 @@
-  * {
-      margin: 0;
-      box-sizing: border-box;
-  }
-  
-  #main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  
-  figure img {
-      height: 250px;
-  }
-  
-  figure {
-      margin: 10px;
-  }
-  
-  figcaption {
-      text-align: center;
-  }
-  
-  header {
-      display: flex;
-      justify-content: right;
-      background-color: cornflowerblue;
-      padding: 1rem;
-  }
-  
-  Button {
-      font-size: 40px;
-  }
+ * {
+     margin: 0;
+     box-sizing: border-box;
+ }
+ 
+ #main {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+ }
+ 
+ figure img {
+     height: 250px;
+     border-radius: 15%;
+ }
+ 
+ figure:hover {
+     background-color: salmon;
+ }
+ 
+ figure {
+     margin: 10px;
+ }
+ 
+ figcaption {
+     text-align: center;
+ }
+ 
+ header {
+     display: flex;
+     justify-content: right;
+     background-color: cornflowerblue;
+     padding: 1rem;
+ }
+ 
+ Button {
+     font-size: 30px;
+     border-radius: 5px;
+     background-color: khaki;
+ }
+ 
+ button:hover {
+     background-color: cornflowerblue;
+ }
