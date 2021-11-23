@@ -20,3 +20,9 @@ figcaption {
     text-align: center;
 
 }
+
+header {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}

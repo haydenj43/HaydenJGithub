@@ -1,9 +1,18 @@
 import { senators } from '../Senators/senatorsdata.js'
+import { representatives } from '../Senators/representatives.js'
+
+const members = [...senators, ...representatives]
 
 const senatorDiv = document.querySelector('.senators')
+const loyaltyHeading = document.querySelector('.mostLoyal')
+const seniorityHeading = document.querySelector('.seniority')
 
-function simplifiedSenators(senatorArray) {
-    return senators.map(senator => {
+function simplifiedMembers(chamberFilter) {
+    
+const filteredArray =  members.filter(member =>  chamberFilter ? member.short_title === chamberFilter : member)
+
+        
+    return filteredArray.map(senator => {
         let middleName = senator.middle_name ? ` ${senator.middle_name} `: ` `
         return {
             id: senator.id,
@@ -11,12 +20,15 @@ function simplifiedSenators(senatorArray) {
             party: senator.party,
             gender: senator.gender,
             seniority: +senator.seniority,
-            imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-100px.jpeg`
+            imgURL: `https://www.govtrack.us/static/legislator-photos/${senator.govtrack_id}-100px.jpeg`,
+            missedVotesPct: senator.missed_votes_pct,
+            loyaltyPct: senator.votes_with_party_pct,
+
         }
     })
 }
 
-gridSenators(simplifiedSenators(senators))
+
 
 function gridSenators(simpleSenators) {
 simpleSenators.forEach(senator => {
@@ -34,16 +46,37 @@ simpleSenators.forEach(senator => {
 }
 
 const filterSenators = (prop, value) => 
-    simplifiedSenators().filter(senator => senator[prop] === value) 
+    simplifiedMembers().filter(senator => senator[prop] === value) 
 
     
-//console.log(filterSenators('party', 'R'))
+console.log(filterSenators('party', 'R'))
 
 
-const seniorSenator = simplifiedSenators().reduce((acc, senator) => {
+const seniorMember = simplifiedMembers().reduce((acc, senator) => {
   return acc.seniority > senator.seniority ? acc : senator 
 })
 
-console.log(seniorSenator)
+seniorityHeading.textContent = `The most senior member of congress is ${seniorMember.name} who has been in congress for 
+${seniorMember.seniority} years.`
 
-gridSenators(simplifiedSenators())
+const loyalSenator = simplifiedMembers().reduce((acc, senator) => {
+if (senator.loyaltyPct === 100) {
+ acc.push(senator)   
+}
+return acc
+}, [])
+
+const cowardList = document.createElement('ol')
+
+const cowards = loyalSenator.map(coward => {
+    let listItem = document.createElement('li')
+    listItem.textContent = coward.name
+cowardList.appendChild(listItem)
+
+})
+
+loyaltyHeading.appendChild(cowardList)
+
+
+
+gridSenators(simplifiedMembers())
