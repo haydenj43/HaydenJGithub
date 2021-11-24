@@ -29,7 +29,6 @@ const filteredArray =  members.filter(member =>  chamberFilter ? member.short_ti
 }
 
 
-
 function gridSenators(simpleSenators) {
 simpleSenators.forEach(senator => {
     const senFigure = document.createElement('figure')
@@ -74,6 +73,7 @@ const cowards = loyalSenator.map(coward => {
 cowardList.appendChild(listItem)
 
 })
+
 
 loyaltyHeading.appendChild(cowardList)
 

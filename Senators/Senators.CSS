@@ -9,20 +9,37 @@
 
 }
 
+
 figure {
     width: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1px;
+    
 }
 figcaption {
     text-align: center;
-
+background-color: khaki;
+margin: 15px;
+width: 85%;
+}
+img {
+    height: 160px;
+    border-radius: 10%;
+    
 }
 
 header {
     display: flex;
     justify-content: right;
     align-items: center;
+    background-color: cornflowerblue;
+}
+body {
+    background-color: salmon;
+}
+figure img:hover {
+    height: 165px;
+   
 }
