@@ -1,11 +1,32 @@
 import { senators } from '../Senators/senatorsdata.js'
 import { representatives } from '../Senators/representatives.js'
 
+const mainContent = document.querySelector('#main')
 const members = [...senators, ...representatives]
 
 const senatorDiv = document.querySelector('.senators')
 const loyaltyHeading = document.querySelector('.mostLoyal')
-const seniorityHeading = document.querySelector('.seniority')
+const mainBody = document.querySelector('body')
+const header = document.createElement('header')
+const maleCharacters = senators.filter(senator => senator.gender === 'M')
+const femaleCharacters = senators.filter(senator => senator.gender === 'F')
+
+
+
+const maleButton = document.createElement('button')
+const femaleButton = document.createElement('button')
+
+
+
+mainBody.appendChild(header)
+maleButton.textContent = 'Male Politicians'
+maleButton.addEventListener('click', () => simplifiedMembers(maleCharacters))
+femaleButton.textContent = 'Female Politicians'
+femaleButton.addEventListener('click', () => simplifiedMembers(femaleCharacters))
+document.body.insertBefore(header, mainContent)
+header.appendChild(maleButton)
+header.appendChild(femaleButton)
+
 
 function simplifiedMembers(chamberFilter) {
     
@@ -51,12 +72,7 @@ const filterSenators = (prop, value) =>
 console.log(filterSenators('party', 'R'))
 
 
-const seniorMember = simplifiedMembers().reduce((acc, senator) => {
-  return acc.seniority > senator.seniority ? acc : senator 
-})
 
-seniorityHeading.textContent = `The most senior member of congress is ${seniorMember.name} who has been in congress for 
-${seniorMember.seniority} years.`
 
 const loyalSenator = simplifiedMembers().reduce((acc, senator) => {
 if (senator.loyaltyPct === 100) {
