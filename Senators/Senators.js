@@ -20,9 +20,10 @@ const femaleButton = document.createElement('button')
 
 mainBody.appendChild(header)
 maleButton.textContent = 'Male Politicians'
-maleButton.addEventListener('click', () => simplifiedMembers(maleCharacters))
+maleButton.addEventListener('click', () => gridSenators(maleCharacters))
 femaleButton.textContent = 'Female Politicians'
 femaleButton.addEventListener('click', () => simplifiedMembers(femaleCharacters))
+
 document.body.insertBefore(header, mainContent)
 header.appendChild(maleButton)
 header.appendChild(femaleButton)
