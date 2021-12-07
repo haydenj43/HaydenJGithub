@@ -39,7 +39,7 @@ backface-visibility: hidden;
 }
 figure img {
     width: 180px;
-    
+    margin: 10px;
 }
 .pokeGrid {
     display: flex;
@@ -47,7 +47,7 @@ figure img {
     margin: 2rem;
 
 }
-figure 
+
 
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;} /* End https://www.cursors-4u.com */
