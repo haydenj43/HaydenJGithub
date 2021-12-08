@@ -8,10 +8,16 @@
     <title>Pokemon Page</title>
 </head>
 <body>
-    <header><h1>Hello there</h1>
-    <button class="load">Open Bag</button>
+    <header ><img src="logo.png" alt="">
+        <div class="buttons">
+    <button class="load" onclick="audio.play();">Open Bag</button>
+    <script type="text/javascript">
+    const audio = new Audio();
+        audio.src = "../Pokemon Cards/fixedmusic.mp3";
+        </script>
     <button class="newPokemon">Create Pokemon</button>
     <button class="morePokemon">More Pokemon</button>
+    <button class="shinyPokemon">OpenShiny Bag</button></div>
     </header>
     <main>
 <div class="pokeGrid">

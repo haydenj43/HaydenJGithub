@@ -89,7 +89,7 @@ function populateFront(pokemon) {
     if(pokemon.id === 900) {
         pokeImg.src = '../Pokemon Cards/pokeball.png'
     } else {
-    pokeImg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
+    pokeImg.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${pokemon.id}.png`}
     const pokeCaption = document.createElement('figcaption')
     pokeCaption.textContent = `${pokemon.id} ${pokemon.name}` 
     pokeFront.appendChild(pokeImg)
