@@ -2,6 +2,8 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 .flip {
     width: 190px;
     height: 267px;
@@ -48,6 +50,14 @@ figure img {
     margin-top: -7%;
     
 }
+figure {
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Gill Sans std';
+    text-transform: uppercase;
+    
+}
+
 .pokeGrid {
     display: flex;
     flex-wrap: wrap;
@@ -67,6 +77,7 @@ header img {
     
     
 }
+
 .buttons {
    display: flex;
    justify-content: center;
@@ -74,8 +85,130 @@ header img {
    
 }
 button {
-    margin: 1rem;
+    margin: 2rem;
+    font-family: 'Gill Sans std';
+    
 }
+.load {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+  }
+  
+  .load::after {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .load:hover::after {
+    top: 0px;
+    left: 0px;
+    background-color: rgb(35, 190, 170);
+  }
 
+  .newPokemon {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+  }
+  
+  .newPokemon::after {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .newPokemon:hover::after {
+    top: 0px;
+    left: 0px;
+    background-color: rgb(250, 247, 60);
+  }
+  .morePokemon {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+  }
+  
+  .morePokemon::after {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .morePokemon:hover::after {
+    top: 0px;
+    left: 0px;
+    background-color: rgb(250, 142, 70);
+  }
+  .shinyPokemon {
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    height: 50px;
+  }
+  
+  .shinyPokemon::after {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  .shinyPokemon:hover::after {
+    top: 0px;
+    left: 0px;
+    background-color: rgb(54, 74, 250);
+  }
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/games/gam-13/gam1282.cur), auto !important;} /* End https://www.cursors-4u.com */
