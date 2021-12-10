@@ -11,7 +11,16 @@ perspective: 600px;
 margin: 2rem;
 
 }
-
+h1 {
+font-size: 20px;
+font-family: 'Gill Sans std';
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10%;
+}
+h4 {
+    text-align: center;
+}
 .card {
     width: 100%;
     height: 100%;
@@ -38,16 +47,28 @@ backface-visibility: hidden;
     height: 267px;
     border-radius: 4%;
 }
+
+.cardFace {
+    background-image: url("front.jpg");
+    width: 190px;
+    height: 267px;
+    border-radius: 4%;
+}
+.cardFace img{
+    height: 200px;
+    margin-top: -9%;
+}
 .back {
-    background:rgb(230, 224, 224);
+    
     transform: rotateY(180deg);
     width: 190px;
     border-radius: 5%;
+    
 }
 figure img {
-    width: 180px;
+    width: 160px;
     margin-left: 4%;
-    margin-top: -7%;
+    margin-top: -4%;
     
 }
 figure {
