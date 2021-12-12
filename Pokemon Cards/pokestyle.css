@@ -54,10 +54,7 @@ backface-visibility: hidden;
     height: 267px;
     border-radius: 4%;
 }
-.cardFace img{
-    height: 200px;
-    margin-top: -9%;
-}
+
 .back {
     
     transform: rotateY(180deg);
