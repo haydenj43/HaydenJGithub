@@ -24,7 +24,7 @@ div img {
 
 figure img {
     height: 250px;
-    border-radius: 15%;
+    border-radius: 10%;
     
 }
 
@@ -51,11 +51,13 @@ header {
     padding: 5px;
 }
 
+
+
 Button {
     font-size: 30px;
     border-radius: 5px;
     background-color: #ebd727;
-    margin: 2%;
+    margin: 1%;
     font-family: starFont;
     padding: 10px;
     
@@ -70,6 +72,7 @@ button:hover {
 
 figure img:hover {
     height: 260px;
+    transition: .65s;
 }
 
 @font-face {
