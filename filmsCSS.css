@@ -1,6 +1,6 @@
 main {
-    background-color: salmon;
-    border-top: salmon;
+    
+   
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -8,84 +8,86 @@ main {
     height: 300vh;
     min-height: 100%;
 }
-
-html {
-    background-color: salmon;
+ 
+.buttons {
+    text-align: center;
+    font-family: starWars;
+   
+}
+button {
+    background-color: #ebd727;
+    font-family: starWars;
+    margin: 5rem;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5%;
 }
 
+.destroyer {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+html {
+    background-image: url("stars2.jpg");
+    
+}
+main {
+    height: 1400px;
+}
 .filmList {
-    display: flex;
+    
     margin-right: 1rem;
     list-style-type: none;
 }
 
 .filmList a:hover {
-    background-color: rgba(236, 113, 113, 0.822);
+    
     size: 100%;
 }
 
-h2 {
-    color: cornflowerblue;
-    font-family: cursive;
-    width: 100%;
-    font-size: 15mm;
-    margin: 20rem;
-    text-align: center;
+header {
+    height: 1030px;
+    
 }
 
-#welcome-section {
-    background-color: khaki;
-    height: 700px;
-    background-size: cover;
-    min-height: 100%;
-    display: flex;
-    text-align: center;
-    width: 100%
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 24%;
 }
 
-.nav-list {
-    display: flex;
-    margin-right: 1rem;
-    list-style-type: none;
-}
-
-.nav-list a {
-    padding: 1rem;
-}
-
-.nav-list a:hover {
-    background-color: #94b8ff;
-}
-
-#navbar {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: cornflowerblue;
-    height: 6%;
-}
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #0a0303;
 }
 
 figcaption {
     text-align: center;
-    font-size: 40px;
-    background-color: khaki;
+    font-size: 35px;
+    background-color: #ebd727;
+    font-family: starWars;
 }
 
 figure {
     height: 20px;
-    margin: 50px;
+    margin: 20px;
+    margin-top: -20%;
 }
 
 figure:hover {
     height: 1px;
+}
+
+@font-face {
+    font-family: starWars;
+    src: url('starfont.ttf');
 }
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/others/oth-1/oth24.cur), auto !important;} /* End https://www.cursors-4u.com */

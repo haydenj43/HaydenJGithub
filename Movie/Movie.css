@@ -1,0 +1,57 @@
+.wrapper {
+    
+    
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+perspective: 450px;
+}
+
+.scroll-text {
+    color: #f8cf3c;
+    font-size: 3vw;
+    font-family: starWars;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 60s linear forwards;
+    display: block;
+}
+
+body {
+    
+    height: 700px;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 50% 0 0 0;
+    position: relative;
+}
+
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    
+}
+
+h1, h2 {
+    text-align: center;
+
+}
+
+@keyframes scroll {
+    from{ top: 0; transform: translateZ(0) rotateX(20deg)}
+    to { top: -7500px; transform: translateZ(-2500px) rotateX(21deg)}
+}
+
+html {
+    background-image: url("stars2.jpg");
+    
+}
