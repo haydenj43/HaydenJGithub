@@ -1,6 +1,7 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 .senators {
@@ -8,7 +9,10 @@
     flex-wrap: wrap;
 
 }
-
+.representatives {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 figure {
     width: 160px;
@@ -20,26 +24,51 @@ figure {
 }
 figcaption {
     text-align: center;
-background-color: khaki;
+background-color: rgb(253, 253, 253);
 margin: 15px;
 width: 85%;
+color: rgb(0, 0, 0);
 }
-img {
+ figure img {
     height: 160px;
     border-radius: 10%;
     
 }
+button {
+    display: flex;
+    justify-self: center;
+    margin: 1rem;
+   margin-top: 5%;
+   height: 40px;
+   font-size: 18px;
+   line-height: 35px;
+   border-radius: 8px;
+}
+  button:hover {
+      background-color: rgb(129, 24, 12);
+  }
+  
 
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
 header {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
-    background-color: cornflowerblue;
+    background-color: rgb(4, 38, 100);
+    height: 220px;
+    
 }
 body {
-    background-color: salmon;
+    background-color: rgb(129, 24, 12);
 }
 figure img:hover {
     height: 165px;
    
 }
+
